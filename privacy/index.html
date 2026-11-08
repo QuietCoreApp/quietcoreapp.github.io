@@ -17,10 +17,10 @@
     </header>
 
     <h1>Privacy Policy</h1>
-    <p class="muted">Effective November 7, 2026</p>
+    <p class="muted">Effective November 8, 2026</p>
 
     <div class="card gold">
-      <p><strong>The short version:</strong> QuietCore doesn't collect your data. There are no accounts, no ads, no analytics and no tracking. Everything you enter, and everything QuietCore reads from Apple Health or your calendar, stays on your iPhone. The only things that leave it are food lookups you ask for (a barcode, a search, or a meal you describe for an estimate), sent without your name or any account, just to get the nutrition back.</p>
+      <p><strong>The short version:</strong> QuietCore doesn't collect your data. There are no accounts, no ads, no analytics and no tracking. Everything you enter, and everything QuietCore reads from Apple Health or your calendar, stays on your iPhone. The only things that leave it are lookups: food you ask about (a barcode, a search, or a meal you describe for an estimate), and the weather for an outdoor run that didn't come with it (an approximate place and a time). They're sent without your name or any account, just to get the answer back.</p>
     </div>
 
     <p>QuietCore is an iPhone app made by Daniel Wood, an independent developer ("we" and "us" below). This policy explains what the app does with your information.</p>
@@ -36,7 +36,7 @@
       <li>Steps, sleep, water, workouts, heart rate, VO2 max and run routes from Apple Health, if you connect it (see below)</li>
       <li>Foods you log, and heart rate zone or test results you enter</li>
     </ul>
-    <p>This information is stored in the app's private storage on your iPhone. None of it is sent to us. We can't see it, and we don't have a copy. The app connects to the internet only for the food lookups described below and to check whether a newer version of the app is available (that check downloads a small file and sends nothing about you).</p>
+    <p>This information is stored in the app's private storage on your iPhone. None of it is sent to us. We can't see it, and we don't have a copy. The app connects to the internet only for the food and weather lookups described below and to check whether a newer version of the app is available (that check downloads a small file and sends nothing about you).</p>
     <p>Like other app data, it's included in your iPhone's own backups (iCloud Backup or a computer backup) if you have those turned on. Those backups are handled by Apple and protected by your Apple Account. They aren't accessible to us.</p>
 
     <h2>Apple Health</h2>
@@ -70,6 +70,14 @@
       <li><strong>AI meal estimates</strong> (a Plus feature): the meal you describe and the restaurant name, if you add one, go to our food server, which asks Anthropic's Claude model to estimate the nutrition, using web searches for the restaurant's published nutrition. Anthropic processes the text to produce the estimate under its commercial terms and does not use it to train its models.</li>
       <li>Our food server runs on Cloudflare. It caches database results so repeat lookups are fast, and to keep AI costs in check it counts estimates per day using a random ID created by the app (not linked to your name, Apple Account or device identifiers). Those counts expire after two days. We don't keep the meals you describe.</li>
       <li>Nothing from Apple Health, your calendar, your food log or the rest of your QuietCore data is ever included.</li>
+    </ul>
+
+    <h2>Weather for your runs</h2>
+    <p>Heat, humidity and daylight change heart rate and effort, so QuietCore records the conditions for outdoor runs and rides. Runs from an Apple Watch already include the weather. For other outdoor runs, QuietCore asks Apple's weather service (Apple Weather / WeatherKit) for the weather at the time of the run, once per run:</p>
+    <ul>
+      <li>What's sent: a location rounded to about half a mile, and the run's start and end time. Nothing that identifies you is included.</li>
+      <li>The location is the start of the run's GPS route when it has one, or the town you set as your running area in the app's settings (kept on your phone, also rounded). QuietCore doesn't use your phone's location services for this.</li>
+      <li>Apple returns the weather, and QuietCore saves it with the run on your phone. Indoor and treadmill runs are never looked up.</li>
     </ul>
 
     <h2>Notifications</h2>
