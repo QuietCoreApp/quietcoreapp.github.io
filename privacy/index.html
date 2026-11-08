@@ -66,7 +66,7 @@
     <h2>Food lookups and AI meal estimates</h2>
     <p>When you look up a food, QuietCore sends only what's needed to get its nutrition back:</p>
     <ul>
-      <li><strong>Barcodes and food searches</strong> (the barcode number or the words you typed) go to the public food databases Open Food Facts and USDA FoodData Central, through our food server.</li>
+      <li><strong>Barcodes and food searches</strong> (the barcode number or the words you typed) go to the public food databases Open Food Facts and USDA FoodData Central, directly or through our food server.</li>
       <li><strong>AI meal estimates</strong> (a Plus feature): the meal you describe and the restaurant name, if you add one, go to our food server, which asks Anthropic's Claude model to estimate the nutrition, using web searches for the restaurant's published nutrition. Anthropic processes the text to produce the estimate under its commercial terms and does not use it to train its models.</li>
       <li>Our food server runs on Cloudflare. It caches database results so repeat lookups are fast, and to keep AI costs in check it counts estimates per day using a random ID created by the app (not linked to your name, Apple Account or device identifiers). Those counts expire after two days. We don't keep the meals you describe.</li>
       <li>Nothing from Apple Health, your calendar, your food log or the rest of your QuietCore data is ever included.</li>
