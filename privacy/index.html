@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy · QuietCore</title>
-  <meta name="description" content="QuietCore's privacy policy. QuietCore doesn't collect your data: no accounts, no ads, no tracking, and Apple Health data never leaves your iPhone.">
+  <meta name="description" content="QuietCore's privacy policy. QuietCore doesn't collect your data: no accounts, no ads, no tracking, and Apple Health and calendar data never leave your iPhone.">
   <link rel="icon" href="../assets/favicon.png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="stylesheet" href="../assets/style.css">
@@ -17,10 +17,10 @@
     </header>
 
     <h1>Privacy Policy</h1>
-    <p class="muted">Effective November 4, 2026</p>
+    <p class="muted">Effective November 7, 2026</p>
 
     <div class="card gold">
-      <p><strong>The short version:</strong> QuietCore doesn't collect your data. There are no accounts, no ads, no analytics and no tracking. Everything you enter, and everything QuietCore reads from Apple Health, stays on your iPhone. It is never sent to us or to anyone else.</p>
+      <p><strong>The short version:</strong> QuietCore doesn't collect your data. There are no accounts, no ads, no analytics and no tracking. Everything you enter, and everything QuietCore reads from Apple Health or your calendar, stays on your iPhone. The only things that leave it are food lookups you ask for (a barcode, a search, or a meal you describe for an estimate), sent without your name or any account, just to get the nutrition back.</p>
     </div>
 
     <p>QuietCore is an iPhone app made by Daniel Wood, an independent developer ("we" and "us" below). This policy explains what the app does with your information.</p>
@@ -33,9 +33,10 @@
       <li>Workouts, runs, rides and recovery sessions you log, including weights, distances and times</li>
       <li>Training programs, running plans, planner events and body check-ins you enter</li>
       <li>Game progress (levels, coins, pets, items, your base) and your settings</li>
-      <li>Steps, sleep, water and workout numbers from Apple Health, if you connect it (see below)</li>
+      <li>Steps, sleep, water, workouts, heart rate, VO2 max and run routes from Apple Health, if you connect it (see below)</li>
+      <li>Foods you log, and heart rate zone or test results you enter</li>
     </ul>
-    <p>This information is stored in the app's private storage on your iPhone. We have no server, and the app makes no network connections to send it anywhere. We can't see it, and we don't have a copy.</p>
+    <p>This information is stored in the app's private storage on your iPhone. None of it is sent to us. We can't see it, and we don't have a copy. The app connects to the internet only for the food lookups described below and to check whether a newer version of the app is available (that check downloads a small file and sends nothing about you).</p>
     <p>Like other app data, it's included in your iPhone's own backups (iCloud Backup or a computer backup) if you have those turned on. Those backups are handled by Apple and protected by your Apple Account. They aren't accessible to us.</p>
 
     <h2>Apple Health</h2>
@@ -45,14 +46,31 @@
       <li>Sleep</li>
       <li>Water</li>
       <li>Workouts (type, start and end time, duration, distance and calories)</li>
+      <li>Heart rate during workouts, resting heart rate and VO2 max</li>
+      <li>Workout routes (the GPS path of a run or ride)</li>
     </ul>
-    <p>QuietCore uses this data only to fill in your quests (for example, a steps or sleep goal) and to log your workouts inside the app. Specifically:</p>
+    <p>QuietCore uses this data only to fill in your quests (for example, a steps or sleep goal), to log your workouts inside the app, and to show your progress (heart rate zones, VO2 max trends, and a map of a run that only you can see). Specifically:</p>
     <ul>
       <li>QuietCore <strong>never writes to or changes</strong> anything in Apple Health.</li>
       <li>Health data is processed and kept <strong>only on your iPhone</strong>. It is never uploaded, never sent to us, and never stored in iCloud by QuietCore.</li>
       <li>Health data is <strong>never</strong> sold, shared with third parties, used for advertising or marketing, or used for anything other than the features above.</li>
     </ul>
     <p>You can change or turn off QuietCore's access at any time in iPhone <strong>Settings → Health → Data Access &amp; Devices → QuietCore</strong>, or tap <strong>Disconnect Apple Health</strong> in the app's settings.</p>
+
+    <h2>Calendar</h2>
+    <p>Linking your iPhone calendar is optional. If you link it, QuietCore reads your events to show them in the app's Planner, and adds the workouts and Planner events you schedule to the calendar you pick. Calendar data stays on your iPhone; it is never uploaded or sent to us. Turning the link off removes QuietCore's upcoming events from your calendar. You can also change access in iPhone <strong>Settings → Privacy &amp; Security → Calendars</strong>.</p>
+
+    <h2>Camera</h2>
+    <p>The camera is used only when you tap <strong>Scan barcode</strong>, to read a food barcode. No photos or video are saved or sent; only the barcode number is used, for the lookup below.</p>
+
+    <h2>Food lookups and AI meal estimates</h2>
+    <p>When you look up a food, QuietCore sends only what's needed to get its nutrition back:</p>
+    <ul>
+      <li><strong>Barcodes and food searches</strong> (the barcode number or the words you typed) go to the public food databases Open Food Facts and USDA FoodData Central, through our food server.</li>
+      <li><strong>AI meal estimates</strong> (a Plus feature): the meal you describe and the restaurant name, if you add one, go to our food server, which asks Anthropic's Claude model to estimate the nutrition, using web searches for the restaurant's published nutrition. Anthropic processes the text to produce the estimate under its commercial terms and does not use it to train its models.</li>
+      <li>Our food server runs on Cloudflare. It caches database results so repeat lookups are fast, and to keep AI costs in check it counts estimates per day using a random ID created by the app (not linked to your name, Apple Account or device identifiers). Those counts expire after two days. We don't keep the meals you describe.</li>
+      <li>Nothing from Apple Health, your calendar, your food log or the rest of your QuietCore data is ever included.</li>
+    </ul>
 
     <h2>Notifications</h2>
     <p>If you turn on reminders, QuietCore schedules them on your iPhone using Apple's local notifications. No push server is involved and nothing is sent off your device.</p>
