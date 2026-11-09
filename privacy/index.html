@@ -65,15 +65,19 @@
     <h2>Sharing</h2>
     <p>When you tap <strong>Share</strong> on a streak, achievement, workout or run, the app draws a picture on your iPhone and opens the iPhone share sheet. Nothing is sent anywhere unless you choose an app or contact there, and only that picture is shared. A run's picture can show the shape of its route, never a map, street names or place names. By default the first and last quarter mile are left off so it doesn't show where you started or finished, and you can leave the route off entirely.</p>
 
-    <h2>Camera</h2>
-    <p>The camera is used only when you tap <strong>Scan barcode</strong>, to read a food barcode. No photos or video are saved or sent; only the barcode number is used, for the lookup below.</p>
+    <h2>Camera and photos</h2>
+    <p>The camera is used only when you tap <strong>Scan barcode</strong> or <strong>Snap a meal</strong>.</p>
+    <ul>
+      <li><strong>Scan barcode</strong> reads a food barcode. No photo or video is saved or sent; only the barcode number is used, for the lookup below.</li>
+      <li><strong>Snap a meal</strong> uses a photo you take or pick from your library for one AI meal estimate (below). The app shrinks the photo and sends only that one picture. QuietCore can't see the rest of your photo library, and the photo isn't saved in the app or on our server.</li>
+    </ul>
 
     <h2>Food lookups and AI meal estimates</h2>
     <p>When you look up a food, QuietCore sends only what's needed to get its nutrition back:</p>
     <ul>
       <li><strong>Barcodes and food searches</strong> (the barcode number or the words you typed) go to the public food databases Open Food Facts and USDA FoodData Central, directly or through our food server.</li>
-      <li><strong>AI meal estimates</strong> (a Plus feature): the meal you describe and the restaurant name, if you add one, go to our food server, which asks Anthropic's Claude model to estimate the nutrition, using web searches for the restaurant's published nutrition. Anthropic processes the text to produce the estimate under its commercial terms and does not use it to train its models.</li>
-      <li>Our food server runs on Cloudflare. It caches database results so repeat lookups are fast, and to keep AI costs in check it counts estimates per day using a random ID created by the app (not linked to your name, Apple Account or device identifiers). Those counts expire after two days. We don't keep the meals you describe.</li>
+      <li><strong>AI meal estimates</strong> (a Plus feature): the meal you describe and the restaurant name, if you add one, go to our food server, which asks Anthropic's Claude model to estimate the nutrition, using web searches for the restaurant's published nutrition. If you add a photo of your meal, the photo is sent the same way, used only for that estimate and not stored on our server. Anthropic processes the text and photo to produce the estimate under its commercial terms and does not use them to train its models.</li>
+      <li>Our food server runs on Cloudflare. It caches database results so repeat lookups are fast, and to keep AI costs in check it counts estimates per day using a random ID created by the app (not linked to your name, Apple Account or device identifiers). Those counts expire after two days. We don't keep the meals you describe or the photos you send.</li>
       <li>Nothing from Apple Health, your calendar, your food log or the rest of your QuietCore data is ever included.</li>
     </ul>
 
