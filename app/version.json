@@ -1,5 +1,5 @@
 {
-  "latestBuild": 18,
+  "latestBuild": 19,
   "minBuild": 1,
   "channel": "testflight",
   "message": "A new QuietCore build is ready in TestFlight."
