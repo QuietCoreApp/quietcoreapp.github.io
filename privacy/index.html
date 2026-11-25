@@ -17,10 +17,10 @@
     </header>
 
     <h1>Privacy Policy</h1>
-    <p class="muted">Effective November 23, 2026</p>
+    <p class="muted">Effective November 24, 2026</p>
 
     <div class="card gold">
-      <p><strong>The short version:</strong> There are no ads, no analytics and no tracking, and you don't sign in. Everything you enter, and everything QuietCore reads from Apple Health or your calendar, stays on your iPhone. If you choose to turn on <strong>Friends</strong>, your hero's name and look, your friends list and the gifts you send are kept on our server so your friends can see them; nothing else is. The only other things that leave your iPhone are lookups: food you ask about (a barcode, a search, or a meal you describe for an estimate), and the weather for an outdoor run that didn't come with it (an approximate place and a time). They're sent without your name or any account, just to get the answer back.</p>
+      <p><strong>The short version:</strong> There are no ads, no analytics and no tracking, and you don't sign in. Everything you enter, and everything QuietCore reads from Apple Health or your calendar, stays on your iPhone. If you choose to turn on <strong>Friends</strong>, your hero's name and look, your friends list and the gifts you send are kept on our server so your friends can see them; nothing else is. The only other things that leave your iPhone are lookups: food you ask about (a barcode, a search, or a meal you describe for an estimate), and the weather for an outdoor run that didn't come with it (an approximate place and a time). They're sent without your name or any account, just to get the answer back. <strong>Automatic backup</strong> sends a copy of your progress to our server, but it's locked on your iPhone first with a key only your own Apple devices have, so we can't read it.</p>
     </div>
 
     <p>QuietCore is an iPhone app made by Daniel Wood, an independent developer ("we" and "us" below). This policy explains what the app does with your information.</p>
@@ -117,6 +117,15 @@
     <h2>Notifications</h2>
     <p>If you turn on reminders, QuietCore schedules them on your iPhone using Apple's local notifications. No push server is involved and nothing is sent off your device.</p>
 
+    <h2>Automatic backup</h2>
+    <p>So a new or replaced iPhone can get your progress back, QuietCore backs it up by itself while you use the app. It's on unless you turn it off in <strong>Settings → Backup &amp; restore</strong>.</p>
+    <ul>
+      <li><strong>Locked before it leaves your iPhone.</strong> Your progress is compressed and encrypted on the phone (AES-256). The key is created on your iPhone and kept in your iCloud Keychain, which Apple syncs end-to-end encrypted between your own devices. We never receive the key, so we can't open your backup, and neither can anyone else who gets hold of the server's copy.</li>
+      <li><strong>What our server keeps:</strong> the locked copy and the one before it, a random ID and a password both worked out from your key on the phone, when it was saved, its size, and a random label that tells one of your heroes from another. No name, no Apple Account, nothing readable.</li>
+      <li><strong>Nothing health-related is stored in iCloud.</strong> Only the key goes into your iCloud Keychain.</li>
+      <li><strong>Recovery code.</strong> The app can show your key as a recovery code, for an iPhone that doesn't have your iCloud Keychain. Anyone with the code can open your backup, so keep it private.</li>
+      <li>Turning automatic backup off, or <strong>Settings → Delete all data</strong>, deletes both copies from our server. A backup nobody has saved or opened for 400 days is deleted automatically.</li>
+    </ul>
     <h2>Backup files</h2>
     <p>You can export a backup file of your progress from the app's settings. The file is created on your device and saved wherever you choose. We never receive it. Keep it somewhere safe, because it contains your quest and workout history and, if Friends is on, the private key to your hero.</p>
 
@@ -139,7 +148,8 @@
     <p>You're in control:</p>
     <ul>
       <li>If Friends is on, <strong>Hero → Friends → Turn off friends and delete my hero from the server</strong> removes everything our server holds about you.</li>
-      <li>In the app, go to <strong>Settings → Delete all data</strong> to erase everything QuietCore has saved on your iPhone. If Friends is on, it deletes your hero from the server too.</li>
+      <li>In the app, go to <strong>Settings → Delete all data</strong> to erase everything QuietCore has saved on your iPhone. It also deletes your automatic backup from our server, and if Friends is on, your hero.</li>
+      <li><strong>Settings → Backup &amp; restore</strong>: turning automatic backup off deletes your backup from our server.</li>
       <li>Deleting the app from your iPhone deletes its data on the phone. If Friends is on, turn it off first (or email us) so your hero is removed from the server as well.</li>
       <li>Disconnecting Apple Health stops new reading right away. iOS permissions can be removed in the Health settings shown above.</li>
     </ul>
